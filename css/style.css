@@ -1,0 +1,567 @@
+:root{
+    --primarycolor: #ff274b;
+    --secondarycolor: #f7bcf7;
+    --lightcolor: #ffffff;
+    --bdcolor-1: #171a1c;
+    --bgcolor-2: #22282a;
+    --padding: 8% ;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+}
+.home .navbar{
+    width: 100%;
+    height: 10vh;
+}
+.home nav .amazon {
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+.home h2{
+    color: #ffffff;
+    position: absolute;
+    left: 150px;
+    top:20px
+}
+.home nav form input {
+    position: absolute;
+    right: 600px; 
+}
+.home nav form button{
+    position: absolute;
+    right: 608px;
+}
+.home nav .shop1{
+    position: absolute;
+    right: 500px;
+    cursor: pointer;
+}
+.home nav .egypt{
+    position: absolute;
+    right: 450px;
+    cursor: pointer;
+}
+.home nav .facebook{
+    position: absolute;
+    right: 390px;
+    cursor: pointer;
+}
+.home nav .visa{
+    position: absolute;
+    right: 330px;
+    cursor: pointer;
+    background-color: #00ff44;
+    border-radius: 20px;
+}
+.home nav .mastercard{
+    position: absolute;
+    right: 240px;
+    cursor: pointer;
+}
+.home .hamada{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 360px;
+    /* background-color: #00ff44; */
+    display: flex;
+    justify-content: space-around;
+}
+.home .hamada .school , .watch , .stream , .visa1{
+    width: 20%;
+    height: 400px;
+    background-color: #f7bcf7;
+    position: relative;
+    background-image: url(../img/school.jpg);
+    background-size: 100% 100% ;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+@media(max-width:1440px){
+    .home nav form input {
+        width: 300px !important;
+        right: 600px;
+    }
+    .home h2{
+        top: 30px; 
+    }
+}
+@media(max-width:1024px){
+    .home nav form input {
+        width: 200px !important;
+        right: 420px;
+        top: 10px;
+    }
+    .home nav form button{
+        right: 428px;
+        top: 10px;
+    }
+    .home h2{
+        top: 15px; 
+        left: 130px;
+    }
+    .home nav .amazon{
+        position: absolute;
+        top: 1px;
+    }
+    .home nav .mastercard{
+        right: 150px;
+    }
+    .home nav .visa{
+        right: 230px;
+    }
+    .home nav .facebook{
+        right: 280px;
+    }
+    .home nav .egypt{
+        right: 330px;
+    }
+    .home nav .shop1{
+        right: 370px;
+    }
+}
+@media(max-width:768px){
+    .home nav form input {
+        width: 200px !important;
+        right: 150px;
+        top: 10px;
+    }
+    .home nav form button{
+        right: 158px;
+        top: 10px;
+    }
+    .home h2{
+        top: 15px; 
+        left: 130px;
+    }
+    .home nav .amazon{
+        position: absolute;
+        top: 1px;
+    }
+    .home nav .mastercard{
+        right: 100px;
+        display: none;
+    }
+    .home nav .visa{
+        right: 180px;
+        display: none;
+    }
+    .home nav .facebook{
+        right: 230px;
+        display: none;
+    }
+    .home nav .egypt{
+        right: 280px;
+        display: none;
+    }
+    .home nav .shop1{
+        right: 100px;
+    }
+    .home .hamada .school , .watch , .stream {
+        width: 25%;
+        height: 300px;
+    }
+    .hamada .visa1{
+        display: none;
+    }
+}
+@media(max-width:426px){
+    .home nav form input {
+        width: 150px !important;
+        right: 150px;
+        top: 20px;
+        height: 20px;
+    }
+    .home nav form button{
+        font-size: 6px;
+        height: 20px;
+        width: 40px;
+        right: 150px;
+        top: 12px;
+    }
+    .home h2{
+        top: 15px; 
+        left: 130px;
+        display: none;
+    }
+    .home nav .amazon{
+        position: absolute;
+        top: 1px;
+    }
+    .home nav .mastercard{
+        right: 100px;
+        display: none;
+    }
+    .home nav .visa{
+        right: 180px;
+        display: none;
+    }
+    .home nav .facebook{
+        right: 230px;
+        display: none;
+    }
+    .home nav .egypt{
+        right: 280px;
+        display: none;
+    }
+    .home nav .shop1{
+        right: 100px;
+    }
+    .home .hamada .school , .watch {
+        width: 45%;
+        height: 300px;
+        top: 0px;
+    }
+    .hamada .stream{
+        display: none;
+    }
+    .hamada .visa1{
+        display: none;
+    }
+    .home .hamada .school h3{
+        font-size: 15px;
+    }
+    .home .hamada .watch h3{
+        font-size: 15px;
+    }
+
+}
+@media(max-width:376px){
+    .home nav form input {
+        width: 100px !important;
+        right: 150px;
+        top: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .home nav form button{
+        font-size: 6px;
+        height: 20px;
+        width: 40px;
+        right: 150px;
+        top: 12px;
+    }
+    .home h2{
+        top: 15px; 
+        left: 130px;
+        display: none;
+    }
+    .home nav .amazon{
+        position: absolute;
+        top: 1px;
+    }
+    .home nav .mastercard{
+        right: 100px;
+        display: none;
+    }
+    .home nav .visa{
+        right: 180px;
+        display: none;
+    }
+    .home nav .facebook{
+        right: 230px;
+        display: none;
+    }
+    .home nav .egypt{
+        right: 280px;
+        display: none;
+    }
+    .home nav .shop1{
+        right: 100px;
+    }
+    .home .hamada .school h3{
+        font-size: 10px;
+    }
+    .home .hamada .watch h3{
+        font-size: 10px;
+    }
+
+}
+@media(max-width:321px){
+    .home nav form input {
+        width: 130px !important;
+        right: 120px;
+        top: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .home nav form button{
+        font-size: 6px;
+        height: 20px;
+        width: 40px;
+        right: 120px;
+        top: 12px;
+    }
+    .home h2{
+        top: 15px; 
+        left: 130px;
+        display: none;
+    }
+    .home nav .amazon{
+        width: 60px !important;
+        height: 35px !important;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+    }
+    .home nav .mastercard{
+        right: 100px;
+        display: none;
+    }
+    .home nav .visa{
+        right: 180px;
+        display: none;
+    }
+    .home nav .facebook{
+        right: 230px;
+        display: none;
+    }
+    .home nav .egypt{
+        right: 280px;
+        display: none;
+    }
+    .home nav .shop1{
+        right: 75px;
+    }
+    .home nav .sgin{
+        width: 60px;
+        height: 30px;
+        font-size: 7px;
+    }
+}
+.section2{
+    width: 100%;
+    height: 60vh;
+    /* background-color: #00ff44; */
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.section2 .div1 , .div2 , .div3 , .div4 {
+    width: 20%;
+    height: 55vh;
+    background-color: #ffffff;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+.section2 .div1 img{
+    width: 100%;
+    height: 100%;
+}
+.section2 .div2 img{
+    width: 100%;
+    height: 100%;
+}
+.section2 .div3 img{
+    width: 100%;
+    height: 100%;
+}
+.section2 .div4 img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:1025px){
+    .section2{
+        top: 200px;
+    }
+}
+@media(max-width:769px){
+    .section2 .div4{
+        display: none;
+    }
+    .section2 .div1 , .div2 , .div3{
+        width: 30%;
+    }
+}
+@media(max-width:426px){
+    .section2{
+        top: 50px;
+    }
+    .section2 .div4 , .div3{
+        display: none;
+    }
+    .section2 .div1 , .div2 {
+        width: 45%;
+    }
+    .section2 .div1 h3{
+        font-size: 15px;
+    }
+    .section2 .div2 h3{
+        font-size: 13px;
+    }
+}
+@media(max-width:376px){
+    .section2 .div1 , .div2 {
+        padding: 0px;
+    }
+    .section2 .div1 h3{
+        padding-top: 10px;
+        font-size: 10px;
+    }
+    .section2 .div2 h3{
+        padding-top: 10px;
+        font-size: 10px;
+    }
+}
+.section3{
+    width: 100%;
+    height: 90vh;
+    background-color: #ffffff;
+    position: relative;
+    top: 50px;
+}
+@media(max-width:1025px){
+    .section3{
+        top: 220px;
+    }
+}
+
+.section4{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+    top: 10px;
+}
+
+.section4 .sport1 , .sport2 , .sport3 , .sport4{
+    width: 22%;
+    height: 40%;
+    background-color: #000000;
+    position: relative;
+    top: 20px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px black;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+@media(max-width:1024px){
+    .section4{
+        top: 200px;
+    }
+    .section4 .sport1 , .sport2 , .sport3 , .sport4{
+        width: 30%;
+    }
+
+}
+@media(max-width:769px){
+    .section4{
+        top: 800px;
+    }
+    .section4 .sport1 , .sport2 , .sport3 , .sport4{
+        width: 30%;
+    }
+}
+@media(max-width:426px){
+    .section4{
+        top: 2000px;
+    }
+    .section4 .sport1 , .sport2 , .sport3 , .sport4{
+        width: 40%;
+    }
+}
+@media(max-width:376px){
+    .section4{
+        top: 2700px;
+    }
+    .section4 .sport1 , .sport2 , .sport3 , .sport4{
+        width: 40%;
+    }
+}
+@media(max-width:326px){
+    .section4 .sport1 , .sport2 , .sport3 , .sport4{
+        width: 80%;
+    }
+}
+
+.theend{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    position: relative;
+    background-color:rgb(35,47,62);
+}
+.theend .endbtn{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(55,71,90);
+    overflow: hidden;
+}
+.theend .endd1 , .endd2 , .endd3 , .endd4{
+    width: 15%;
+    height: 25vh;
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+    position: relative;
+    top: 50px;
+}
+.theend a{
+    text-decoration: none;
+    color: aliceblue;
+}
+@media(max-width:1024px){
+    .theend{
+        top: 500px;
+    }
+    .theend .endd1 , .endd2 , .endd3 , .endd4{
+        width: 15%;
+        font-size: 10px;
+    }
+    .theend a h2{
+        font-size: 15px;
+    }
+}
+@media(max-width:769px){
+    .theend{
+        top: 1400px;
+    }
+}
+@media(max-width:426px){
+    .theend{
+        top: 2600px;
+    }
+    .theend .endd1 , .endd2 , .endd3 , .endd4{
+        width: 10%;
+        font-size: 5px;
+    }
+    .theend a h2{ 
+        font-size: 8px;
+    }
+
+}
+
+@media(max-width:376px){
+    .theend{
+        top: 3300px;
+    }
+}
+
+@media(max-width:321px){
+    .theend{
+        top: 4400px;
+    }
+    .theend .endd4{
+        display: none;
+    }
+}
